@@ -1,5 +1,5 @@
 # Challenges
-##Stock Quantity Validation
+## Stock Quantity Validation
 
 One assumption we made on the base exercise was that we won't have any operations in which the investor will sell more stocks than they have. For this extension, you will need to output an error message when the investor inputs an operation that tries to sell more stocks than they have.
 
@@ -16,7 +16,7 @@ Output #2
 [{"tax":0}, {"error":"Can't sell more stocks than you have"}, {"tax":10000}]
 
 
-##Stock Quantity Error Limit
+## Stock Quantity Error Limit
 (If the stock quantity validation is quickly implemented or want more insights from the candidate)
 After validating the stock quantity, we will check if the investor tries to perform multiple invalid actions consecutively, if such an error happens we block the following operations, even if those are valid.
 
@@ -33,7 +33,7 @@ Output #1
 {"error":"Your account is blocked"}]
 
 
-##Multiple Stocks
+## Multiple Stocks
 Now we should consider multiple tickers, so the input for an operation will also contain a new information called "ticker" that will be an identifier of which asset you're selling. The profit calculation (through weighted-average price) and quantity validation (if implemented) on selling should also consider the ticker.
 
 When you sell at a loss, you should use the loss from one ticker toward any other ticker.
